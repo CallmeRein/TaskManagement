@@ -1,0 +1,122 @@
+.dashboard-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.left-section, .right-section {
+    width: 47%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.left-section {
+    background-color: #f2e9e4;
+}
+
+.right-section {
+    background-color: #c9ada7;
+}
+
+.left-section form input, .left-section form button {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.left-section form button {
+    background-color: #4a4e69;
+    color: white;
+    border: none;
+    font-size: 20px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.left-section form button:hover {
+    background-color: #9a8c98;
+}
+
+.right-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.right-section table, th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.right-section table th {
+    background-color: #f2e9e4;
+}
+
+.right-section th, td{
+    text-align: center;
+}
+
+.right-section td, .right-section th {
+    color: #22223b;
+}
+
+.right-section td {
+    background-color: #f9f9f9;
+}
+
+.logout-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4a4e69;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #9a8c98;
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-section, .right-section {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .left-section form input, .left-section form button {
+        font-size: 14px;
+    }
+
+    .right-section table {
+        font-size: 14px;
+    }
+}
+
+button.remove-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.remove-btn:hover {
+    background-color: #c0392b;
+}
+
+button.remove-btn:focus {
+    outline: none;
+}
